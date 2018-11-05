@@ -25,7 +25,7 @@
                 <a class="mui-navigate-right" href="#account">
                     <img class="mui-media-object mui-pull-left head-img" id="head-img" src="../images/user.jpg">
                     <div class="mui-media-body">
-                        Hello MUI
+                        <span class="myname"></span>
                         <p class="mui-ellipsis">账号:hellomui</p>
                     </div>
                 </a>
@@ -81,6 +81,8 @@
              if(info.error){
                  location.href='login.html';
           }
+          //填写用户名到文档上
+          $('.myname').text(info.username);
         }
     })
     //退出登录 /代表http://54.com 当前
